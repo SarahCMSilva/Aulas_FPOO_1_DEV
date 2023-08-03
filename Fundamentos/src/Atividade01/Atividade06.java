@@ -17,13 +17,13 @@ public class Atividade06 {
         System.out.println("Em quantos anos gostaria de pagar: ");
         int AnosPagar = scanner.nextInt();
         
-        double SalPorcentagem = (salario * 0.30);
+        double LimitePagamento = (salario * 3) / 100;
         double ValorMes = ((AnosPagar * 12) / ValorCasa);
         
-        if (ValorMes <= SalPorcentagem) {
-            System.out.println("O valor mensal é: " + ValorMes);
+        if (ValorMes < LimitePagamento) {
+            System.out.println("Nao foi possivel realizar o emprestimo");
         } else {
-            System.out.println("Não e possivel realizar o emprestimo");
+            System.out.println("Emprestimo realizado" );
         }
     }
 }

@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package enumeracao.atividades;
+package Atividade03;
 
 /**
  *
@@ -21,13 +21,18 @@ public enum MesesEnum {
     OUTUBRO("Outubro"),
     NOVEMBRO("Novembro"),
     DEZEMBRO("Dexembro");
+    
+    private String meses;
+
+    private MesesEnum(String meses) {
+        this.meses = meses;
+    }
+
+    public String getMeses() {
+        return meses;
+    }
+    
 }
-private String meses;
+
     
-    private StatusEnum(String status){
-        this.status = status;
-    }
     
-    public String getStatus(){
-        return  this.status;
-    }

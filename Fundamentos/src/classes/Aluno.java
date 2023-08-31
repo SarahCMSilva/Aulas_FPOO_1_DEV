@@ -25,13 +25,13 @@ public class Aluno {
         this.email = email;
         this.ra = ra;
         this.media = media;
-        this.passou = Aprovado();
+        this.passou = passou;
     }
    
     //acoes
    public boolean Aprovado(){
        if (this.media >= 6.0) {
-           this.passou = "Aprovado";
+           
        }
               return this.passou;
 

@@ -15,8 +15,10 @@ public class Aluno extends Pessoa{
         super(nome, email, idade, genero);
         this.ra = ra;
     }
-
-  
+    
+    public void ra(){
+        System.out.println("O aluno tem: " + this.ra.length() );
+    }
 
     @Override
     public boolean verificarMaiorDeIdade() {

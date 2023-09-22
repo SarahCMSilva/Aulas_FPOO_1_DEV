@@ -11,4 +11,5 @@ package heranca.escola;
 public interface ValidaPessoa {
     //Contrato nao precisa de nada no interior
     boolean verificarDominioEmailGmail(String email);
+    boolean verificarDominioYahooGmail(String email);
 }

@@ -40,7 +40,7 @@ public class Pessoa implements ValidaPessoa{
     }
     
     
-    //&& this.email.contains("@yahoo")
+    //&& this.email.contains("@yahoo") / se quiser por no mesmo metodo o yahoo
     @Override
     public boolean verificarDominioEmailGmail(String email) {
         if (this.email.contains("@gmail")  ) {
@@ -52,7 +52,16 @@ public class Pessoa implements ValidaPessoa{
         }
     }
     
-
+    @Override
+    public boolean verificarDominioYahoo(String email) {
+        if (this.email.contains("@yahoo")  ) {
+            System.out.println("Seu email foi confirmado");
+            return true;
+        } else {
+            System.out.println("Seu email nao foi identificado");
+            return false;
+        }
+    }
 
     
    

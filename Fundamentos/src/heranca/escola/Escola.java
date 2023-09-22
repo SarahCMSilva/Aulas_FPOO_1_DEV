@@ -12,6 +12,7 @@ public class Escola {
     public static void main(String[] args) {
         Professor p1 = new Professor(true, "Lucas", "lucas@gmail.com", 28, "masculino");
         p1.verificarDominioEmailGmail(p1.getEmail());
+        p1.verificarDedicacao();
         System.out.println(p1);
         System.out.println("-------------------------------------------");
         
@@ -21,12 +22,14 @@ public class Escola {
         System.out.println("-------------------------------------------");
         
         Professor p2 = new Professor(true, "joao", "joao@yahoo.com", 28, "masculino");
-        p2.verificarDominioEmailGmail(p2.getEmail());
+        p2.verificarDominioYahoo(p2.getEmail());
+        p1.verificarDedicacao();
         System.out.println(p2);
         System.out.println("-------------------------------------------");
         
         Aluno a2 = new Aluno("sijfw283", "Daniel", "dani@yahoo.com", 17, "feminino");
-        a2.verificarDominioEmailGmail(a2.getEmail());
+        a2.verificarDominioYahoo(a2.getEmail());
+        a2.ra();
         System.out.println(a2);
         System.out.println("-------------------------------------------");
     }

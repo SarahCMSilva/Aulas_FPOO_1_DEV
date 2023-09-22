@@ -4,6 +4,8 @@
  */
 package heranca.escola;
 
+import java.time.chrono.ThaiBuddhistEra;
+
 /**
  *
  * @author Aluno
@@ -17,6 +19,15 @@ public class Professor extends Pessoa{
     }
 
     
+    public boolean verificarDedicacao() {
+        if (this.dedicacaoExclusiva == true) {
+            System.out.println("Verificado");
+            return true;
+        } else {
+            System.out.println("Nao verificado");
+            return false;
+        }
+    }
 
     @Override
     public String toString() {

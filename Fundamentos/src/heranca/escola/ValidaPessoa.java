@@ -9,5 +9,6 @@ package heranca.escola;
  * @author Aluno
  */
 public interface ValidaPessoa {
-    
+    //Contrato nao precisa de nada no interior
+    boolean verificarDominioEmailGmail(String email);
 }

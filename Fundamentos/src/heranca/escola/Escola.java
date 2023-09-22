@@ -10,10 +10,24 @@ package heranca.escola;
  */
 public class Escola {
     public static void main(String[] args) {
-        Professor p1 = new Professor(true, "Pedro", "pedro@gmail.com", 30);
+        Professor p1 = new Professor(true, "Lucas", "lucas@gmail.com", 28, "masculino");
+        p1.verificarDominioEmailGmail(p1.getEmail());
         System.out.println(p1);
+        System.out.println("-------------------------------------------");
         
-        Aluno a1 =new Aluno("ewiu3ew", "Nathalia", "nathalia@gmail.com", 17);
+        Aluno a1 = new Aluno("swig254", "Fernando", "fe@gmail.com", 17, "masculino");
+        a1.verificarDominioEmailGmail(a1.getEmail());
         System.out.println(a1);
+        System.out.println("-------------------------------------------");
+        
+        Professor p2 = new Professor(true, "joao", "joao@yahoo.com", 28, "masculino");
+        p2.verificarDominioEmailGmail(p2.getEmail());
+        System.out.println(p2);
+        System.out.println("-------------------------------------------");
+        
+        Aluno a2 = new Aluno("sijfw283", "Daniel", "dani@yahoo.com", 17, "feminino");
+        a2.verificarDominioEmailGmail(a2.getEmail());
+        System.out.println(a2);
+        System.out.println("-------------------------------------------");
     }
 }

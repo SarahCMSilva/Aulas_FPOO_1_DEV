@@ -11,10 +11,12 @@ package heranca.escola;
 public class Professor extends Pessoa{
     private boolean dedicacaoExclusiva;
 
-    public Professor(boolean dedicacaoExclusiva, String nome, String email, int idade) {
-        super(nome, email, idade);
+    public Professor(boolean dedicacaoExclusiva, String nome, String email, int idade, String genero) {
+        super(nome, email, idade, genero);
         this.dedicacaoExclusiva = dedicacaoExclusiva;
     }
+
+    
 
     @Override
     public String toString() {

@@ -11,10 +11,12 @@ package heranca.escola;
 public class Aluno extends Pessoa{
     private String ra;
 
-    public Aluno(String ra, String nome, String email, int idade) {
-        super(nome, email, idade);
+    public Aluno(String ra, String nome, String email, int idade, String genero) {
+        super(nome, email, idade, genero);
         this.ra = ra;
     }
+
+  
 
     @Override
     public boolean verificarMaiorDeIdade() {

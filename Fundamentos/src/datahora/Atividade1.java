@@ -19,10 +19,11 @@ public class Atividade1 {
         String frase = "Hoje e dia  " + dia + " do mes " + mes + " do ano de " + ano;
         System.out.println(frase);
         
+        //Transformar em extenso para portugues
         Locale localeBrasil = Locale.of("pt","BR");
         
         String mesPorExtenso = hoje.getMonth().getDisplayName(TextStyle.FULL, localeBrasil);
-        String dataPorExtenso = String.format("Hoj e dia %d do mes %s,ano %d", dia,mesPorExtenso,ano);
+        String dataPorExtenso = String.format("Hoje e dia %d do mes %s,ano %d", dia,mesPorExtenso,ano);
         System.out.println(dataPorExtenso);
     }
 }
